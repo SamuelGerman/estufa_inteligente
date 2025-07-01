@@ -1,0 +1,74 @@
+/* Reset Básico e Estilo Geral */
+:root {
+    --bg-color: #f4f7f9;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --primary-color: #007bff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --border-radius: 12px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 2em;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+header h1 {
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+
+#last-updated {
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Layout dos Cards em Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5em;
+}
+
+/* Estilo dos Cards */
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.5em;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.sensor-value {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.chart-container {
+    position: relative;
+    height: 200px; /* Altura fixa para os gráficos */
+}
