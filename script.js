@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbwrpKejqXSu1Fn4zjAZ5jdzI1Qw7Yg3Bi5DcWlbwdVV4pq9pYLpn4eE4Wq0bAJrooTi/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbx2MzkOhFEynHkYgM-oXke8_gjZyyvPqyqiToQI8PojSEV8lvo3HmGZ7NVjwjV62Mgo5Q/exec";
 
 const elements = {
     temp: { value: 'temp-value', chart: 'temp-chart', sheet: 'TEMPERATURA', unit: '°C' },
